@@ -1,0 +1,157 @@
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Text:wght@400;500;600;700&display=swap");
+body,
+html,
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 14px;
+  font-family: "Red Hat Text", sans-serif;
+}
+
+main {
+  background-image: url(./images/bg-stars.svg), linear-gradient(rgb(21, 19, 27), hsla(266deg, 21%, 13%, 0.93));
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 100vw;
+  height: 70vh;
+}
+@media only screen and (max-width: 600px) {
+  main {
+    height: auto;
+  }
+}
+main .timer-container {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 70%;
+  height: 100%;
+  margin: auto;
+}
+main .timer-container .title {
+  text-transform: uppercase;
+  color: white;
+  font-size: 20px;
+  font-weight: 600;
+  margin: 2em 0em;
+  letter-spacing: 6px;
+}
+@media only screen and (max-width: 600px) {
+  main .timer-container .title {
+    font-size: 16px;
+  }
+}
+main .timer-container .timer {
+  margin: 2em 0em;
+  flex-direction: row;
+  display: flex;
+  -moz-column-gap: 30px;
+       column-gap: 30px;
+}
+@media only screen and (max-width: 600px) {
+  main .timer-container .timer {
+    flex-direction: column;
+  }
+}
+main .timer-container .timer .count .timer_action {
+  box-shadow: 0px 10px 2px rgb(26, 24, 34);
+  position: relative;
+}
+main .timer-container .timer .count .timer_action .top {
+  width: 150px;
+  height: 70px;
+  background: radial-gradient(circle 10px at bottom left, rgba(0, 0, 0, 0) 90%, hsla(236deg, 21%, 26%, 0.6)) top left, radial-gradient(circle 10px at bottom right, rgba(0, 0, 0, 0) 90%, hsla(236deg, 21%, 26%, 0.6)) top right;
+  background-size: 50% 100%;
+  background-repeat: no-repeat;
+  border-radius: 5px 5px;
+}
+main .timer-container .timer .count .timer_action .bottom {
+  border-radius: 5px 5px;
+  width: 150px;
+  height: 70px;
+  background: radial-gradient(circle 10px at top left, rgba(0, 0, 0, 0) 90%, hsl(236deg, 21%, 26%)) top left, radial-gradient(circle 10px at top right, rgba(0, 0, 0, 0) 90%, hsl(236deg, 21%, 26%)) top right;
+  background-size: 50% 100%;
+  background-repeat: no-repeat;
+}
+main .timer-container .timer .count .timer_action #days,
+main .timer-container .timer .count .timer_action #hrs,
+main .timer-container .timer .count .timer_action #mins,
+main .timer-container .timer .count .timer_action #seconds {
+  background-color: transparent;
+  z-index: 1;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 70px;
+  font-weight: bold;
+  color: hsl(345deg, 95%, 68%);
+}
+main .timer-container .timer .count hr {
+  height: 2px;
+  background-color: rgba(0, 0, 0, 0.1019607843);
+  position: absolute;
+  border-bottom: none;
+  border-top: 1px solid #47525d;
+  border-left: none;
+  border-right: none;
+  width: 70%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+main .timer-container .timer .count .timer_text {
+  margin-top: 30px;
+  font-size: 16px;
+  text-transform: uppercase;
+  color: hsl(237deg, 18%, 59%);
+  font-weight: bold;
+  letter-spacing: 5px;
+}
+main .timer-container .timer .flip {
+  -webkit-animation: loader 1s infinite;
+          animation: loader 1s infinite;
+  transition: 0.2s;
+  transform-style: preserve-3d;
+}
+@-webkit-keyframes loader {
+  0% {
+    transform: rotateX(0deg);
+  }
+  100% {
+    transform: rotateX(90deg);
+  }
+}
+@keyframes loader {
+  0% {
+    transform: rotateX(0deg);
+  }
+  100% {
+    transform: rotateX(90deg);
+  }
+}
+
+footer {
+  background-image: url("./images/pattern-hills.svg");
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 30vh;
+  width: 100%;
+  background-color: hsla(266deg, 21%, 13%, 0.93);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+footer .fab {
+  font-size: 25px;
+  margin-right: 20px;
+  color: hsl(237deg, 18%, 59%);
+}
+footer .fab:hover {
+  color: hsl(345deg, 95%, 68%);
+}/*# sourceMappingURL=style.css.map */
