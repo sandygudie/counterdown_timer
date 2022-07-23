@@ -17,7 +17,7 @@ main {
   width: 100vw;
   height: 70vh;
 }
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 700px) {
   main {
     height: auto;
   }
@@ -40,7 +40,7 @@ main .timer-container .title {
   margin: 2em 0em;
   letter-spacing: 6px;
 }
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 700px) {
   main .timer-container .title {
     font-size: 16px;
   }
@@ -52,7 +52,7 @@ main .timer-container .timer {
   -moz-column-gap: 30px;
        column-gap: 30px;
 }
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 700px) {
   main .timer-container .timer {
     flex-direction: column;
   }
@@ -64,7 +64,7 @@ main .timer-container .timer .count .timer_action {
 main .timer-container .timer .count .timer_action .top {
   width: 150px;
   height: 70px;
-  background: radial-gradient(circle 10px at bottom left, rgba(0, 0, 0, 0) 90%, hsla(236deg, 21%, 26%, 0.6)) top left, radial-gradient(circle 10px at bottom right, rgba(0, 0, 0, 0) 90%, hsla(236deg, 21%, 26%, 0.6)) top right;
+  background: radial-gradient(circle 5px at bottom left, rgba(0, 0, 0, 0) 90%, hsla(236deg, 21%, 26%, 0.6)) top left, radial-gradient(circle 5px at bottom right, rgba(0, 0, 0, 0) 90%, hsla(236deg, 21%, 26%, 0.6)) top right;
   background-size: 50% 100%;
   background-repeat: no-repeat;
   border-radius: 5px 5px;
@@ -73,7 +73,7 @@ main .timer-container .timer .count .timer_action .bottom {
   border-radius: 5px 5px;
   width: 150px;
   height: 70px;
-  background: radial-gradient(circle 10px at top left, rgba(0, 0, 0, 0) 90%, hsl(236deg, 21%, 26%)) top left, radial-gradient(circle 10px at top right, rgba(0, 0, 0, 0) 90%, hsl(236deg, 21%, 26%)) top right;
+  background: radial-gradient(circle 5px at top left, rgba(0, 0, 0, 0) 90%, hsl(236deg, 21%, 26%)) top left, radial-gradient(circle 5px at top right, rgba(0, 0, 0, 0) 90%, hsl(236deg, 21%, 26%)) top right;
   background-size: 50% 100%;
   background-repeat: no-repeat;
 }
@@ -111,28 +111,6 @@ main .timer-container .timer .count .timer_text {
   color: hsl(237deg, 18%, 59%);
   font-weight: bold;
   letter-spacing: 5px;
-}
-main .timer-container .timer .flip {
-  -webkit-animation: loader 1s infinite;
-          animation: loader 1s infinite;
-  transition: 0.2s;
-  transform-style: preserve-3d;
-}
-@-webkit-keyframes loader {
-  0% {
-    transform: rotateX(0deg);
-  }
-  100% {
-    transform: rotateX(90deg);
-  }
-}
-@keyframes loader {
-  0% {
-    transform: rotateX(0deg);
-  }
-  100% {
-    transform: rotateX(90deg);
-  }
 }
 
 footer {

@@ -18,7 +18,7 @@ main {
   background-size: contain;
   width: 100vw;
   height: 70vh;
-  @media only screen and (max-width: 600px) {
+  @media only screen and (max-width: 700px) {
     height: auto;
   }
   .timer-container {
@@ -37,7 +37,7 @@ main {
       font-weight: 600;
       margin: 2em 0em;
       letter-spacing: 6px;
-      @media only screen and (max-width: 600px) {
+      @media only screen and (max-width: 700px) {
         font-size: 16px;
       }
     }
@@ -46,7 +46,7 @@ main {
       flex-direction: row;
       display: flex;
       column-gap: 30px;
-      @media only screen and (max-width: 600px) {
+      @media only screen and (max-width: 700px) {
         flex-direction: column;
       }
       .count {
@@ -57,13 +57,13 @@ main {
             width: 150px;
             height: 70px;
             background: radial-gradient(
-                  circle 10px at bottom left,
+                  circle 5px at bottom left,
                   #0000 90%,
                   hsl(236deg 21% 26% / 60%)
                 )
                 top left,
               radial-gradient(
-                  circle 10px at bottom right,
+                  circle 5px at bottom right,
                   #0000 90%,
                   hsl(236deg 21% 26% / 60%)
                 )
@@ -77,13 +77,13 @@ main {
             width: 150px;
             height: 70px;
             background: radial-gradient(
-                  circle 10px at top left,
+                  circle 5px at top left,
                   #0000 90%,
                   hsl(236, 21%, 26%)
                 )
                 top left,
               radial-gradient(
-                  circle 10px at top right,
+                  circle 5px at top right,
                   #0000 90%,
                   hsl(236, 21%, 26%)
                 )
@@ -104,6 +104,7 @@ main {
             font-size: 70px;
             font-weight: bold;
             color: hsl(345, 95%, 68%);
+            // animation: loader 1s infinite;
           }
         }
 
@@ -129,23 +130,18 @@ main {
           letter-spacing: 5px;
         }
       }
-      .flip {
-        animation: loader 1s infinite;
-        transition: 0.2s;
-        transform-style: preserve-3d;
-      }
 
-      @keyframes loader {
-        0% {
-          //   rotate: 0deg;
-          transform: rotateX(0deg);
-          //   transition: 0.2s;
-          //   transform-style: preserve-3d;
-        }
-        100% {
-          transform: rotateX(90deg);
-        }
-      }
+      // @keyframes loader {
+      //   0% {
+      //       rotate: 0deg;
+      //     transform: rotateX(90deg);
+      //       transition: 0.1s;
+      //       transform-style: preserve-3d;
+      //   }
+      //   100% {
+      //     transform: rotateX(0deg);
+      //   }
+      // }
     }
   }
 }
